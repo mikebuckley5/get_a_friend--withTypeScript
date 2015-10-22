@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Find a Friend</title>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div ng-controller="app.mainCtrl">
+        <!-- Single button -->
+        <div class="container">
+            <div class="jumbotron jumboSetting">
+                <h1 align="center">{{intro}}</h1>
+                <h4 align="center">{{well}}</h4>
+                <h3 align="center">{{yourFriend}}</h3>
+                <h1 align="center">{{newData.firstName}} {{newData.lastName}}</h1>
+                <p align="center"><img class="imgBorder img-responsive" ng-src="{{newData.image}}" /></p>
+                <p align="center"><a class="btn btn-primary btn-lg removeGetButton" ng-click="getFriend()" href="#" role="button">Get a Friend!</a></p>
+            </div>
+        </div>
+    </div>
+        <script src="../Scripts/jquery-2.1.4.js"></script>
+        <script src="../Scripts/angular.js"></script>
+        <script src="./app.module.js"></script>
+        <script src="./app.controller.js"></script>
+        <script src="./app.service.js"></script>
+</body>
+</html>
